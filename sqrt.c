@@ -11,6 +11,13 @@ bool valid(int n)  {
 	return true;
 }
 
+void negsqr(int n)  {
+	n = -1 * n;
+	printf("Sqrt of %d is %fi\n", n, sqrt(n));
+	printf("End of program. Exiting\n");
+	return;
+}
+
 //Sahil Garg B18138
 int main(int argc, char* argv[]) {
 	
@@ -24,11 +31,12 @@ int main(int argc, char* argv[]) {
 	if (!valid(input)) {
 		printf("Negative Number\n");
 		printf("End of program. Exiting\n");
+		negsqr(input);
 		return (0);
 	}
 	
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("Added exit message\n");
+	printf("End of program. Exiting!!\n");
 	return(0);
 
 } // end main
